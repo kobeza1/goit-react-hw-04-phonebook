@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { nanoid } from 'nanoid';
-import Form from './Form/Form';
+import { Form } from './Form/Form';
 import { Box } from './App.styled';
 import { ContactsList } from './Contacts/ContactsList';
 import { Section } from './Section/Section';

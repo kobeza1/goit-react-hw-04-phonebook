@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { FormStyled, Label, Input } from './Form.styled';
 
-const Form = ({ Submit }) => {
+export const Form = ({ Submit }) => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
@@ -65,4 +66,6 @@ const Form = ({ Submit }) => {
   );
 };
 
-export default Form;
+Form.propTypes = {
+  Submit: PropTypes.func.isRequired,
+};
